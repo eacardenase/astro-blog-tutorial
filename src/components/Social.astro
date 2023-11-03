@@ -1,0 +1,13 @@
+---
+interface Props {
+  platform: string;
+  username: string;
+}
+
+const { platform, username } = Astro.props;
+---
+
+<a
+  class='rounded-full bg-[#4c1d95] px-4 py-2 text-white'
+  href={`https://www.${platform}.com/${username}`}>{platform}</a
+>
